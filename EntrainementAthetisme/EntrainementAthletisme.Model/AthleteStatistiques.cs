@@ -4,6 +4,7 @@
     {
         public double VMA { get; init; }
         public double FrequenceCardiaqueMax { get; init; }
+        public double FrequenceCardiaqueMin { get; init; }
 
         public double PuissanceCritique { get; init; }
     }

@@ -11,9 +11,10 @@ namespace EntrainementAthetisme.ViewModels
     {
         public AthleteStatistiques Statistique { get; } = new AthleteStatistiques
         {
-            FrequenceCardiaqueMax = 190,
+            FrequenceCardiaqueMin = 43,
+            FrequenceCardiaqueMax = 184,
             PuissanceCritique = 300,
-            VMA = 14.7
+            VMA = 14.45
         };
 
         public IEnumerable<NiveauEntrainementLabel> TypeDEntrainements { get; } = new List<NiveauEntrainementLabel>
@@ -21,14 +22,14 @@ namespace EntrainementAthetisme.ViewModels
             new NiveauEntrainementLabel
             {
                 Name = "Vitesse",
-                PourcentageDeLaFrequenceCardiaqueMax = 98,
+                PourcentageDeLaFrequenceCardiaqueMax = 100,
                 PourcentageDeLaPuissance = 120,
                 PourcentageDeLaVMA = 105
             },
             new NiveauEntrainementLabel
             {
                 Name = "Répétition Anaérobique",
-                PourcentageDeLaFrequenceCardiaqueMax = 97,
+                PourcentageDeLaFrequenceCardiaqueMax = 98,
                 PourcentageDeLaPuissance = 112,
                 PourcentageDeLaVMA = 100
 ,
@@ -36,7 +37,7 @@ namespace EntrainementAthetisme.ViewModels
             new NiveauEntrainementLabel
             {
                 Name = "Fractionné courte distance (5km)",
-                PourcentageDeLaFrequenceCardiaqueMax = 95,
+                PourcentageDeLaFrequenceCardiaqueMax = 96,
                 PourcentageDeLaPuissance = 104,
                 PourcentageDeLaVMA = 95
 ,
@@ -44,7 +45,7 @@ namespace EntrainementAthetisme.ViewModels
             new NiveauEntrainementLabel
             {
                 Name = "Fractionné moyenne distance (10 km)",
-                PourcentageDeLaFrequenceCardiaqueMax = 92,
+                PourcentageDeLaFrequenceCardiaqueMax = 95,
                 PourcentageDeLaPuissance = 100,
                 PourcentageDeLaVMA = 90
 ,
@@ -65,12 +66,12 @@ namespace EntrainementAthetisme.ViewModels
                 PourcentageDeLaVMA = 72
 ,
             },
-            new NiveauEntrainementLabel
+             new NiveauEntrainementLabel
             {
-                Name = "Récupération",
-                PourcentageDeLaFrequenceCardiaqueMax = 70,
-                PourcentageDeLaPuissance = 70,
-                PourcentageDeLaVMA = 62
+                Name = "Endurance légère (Récupération)",
+                PourcentageDeLaFrequenceCardiaqueMax = 65,
+                PourcentageDeLaPuissance = 75,
+                PourcentageDeLaVMA = 65
 ,
             }
         };

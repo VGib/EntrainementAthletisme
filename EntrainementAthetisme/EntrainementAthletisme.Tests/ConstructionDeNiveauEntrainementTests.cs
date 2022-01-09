@@ -13,11 +13,13 @@ namespace EntrainementAthletisme.Tests
             Assert.AreSame(ConstantePourLesTests.Label, target.Label);
         }
 
+        //https://fr.wikipedia.org/wiki/M%C3%A9thode_Karvonen
+        //https://www.montre-cardio-gps.fr/comment-configurer-les-zones-cardio-pour-lentrainement/
         [Test]
-        public void LaFrequenceCardiaqueDoitEtreLaFrequenceCardiaqueMaxMultiplieParLePourcentageDEffortDeFrequenceCardiaqueDuLabel()
+        public void LaFrequenceCardiaqueDoitEtreCalculeDepuisLaMethodeDeKarvonen()
         {
             var target = new NiveauEntrainement(ConstantePourLesTests.Label, ConstantePourLesTests.AthleteStatistiques);
-            Assert.AreEqual(161.5d, target.FrequenceCardiaque);
+            Assert.AreEqual(167.5d, target.FrequenceCardiaque);
         }
 
         [Test]

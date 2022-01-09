@@ -12,7 +12,7 @@ namespace EntrainementAthletisme.Model
         {
             Label = label;
 
-            FrequenceCardiaque = label.PourcentageDeLaFrequenceCardiaqueMax * atheleteStatistiques.FrequenceCardiaqueMax / 100d;
+            FrequenceCardiaque =  label.PourcentageDeLaFrequenceCardiaqueMax  * ( atheleteStatistiques.FrequenceCardiaqueMax - atheleteStatistiques.FrequenceCardiaqueMin ) / 100d + atheleteStatistiques.FrequenceCardiaqueMin;
             VitesseKmParHeure = label.PourcentageDeLaVMA * atheleteStatistiques.VMA / 100d;
             VitesseEnMinParKm = TimeSpan.FromSeconds(1000d * 3.6d / VitesseKmParHeure);
             Puissance = label.PourcentageDeLaPuissance * atheleteStatistiques.PuissanceCritique / 100d;

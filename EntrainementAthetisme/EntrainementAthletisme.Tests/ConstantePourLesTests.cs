@@ -6,7 +6,7 @@ namespace EntrainementAthletisme.Tests
     {
         public static readonly NiveauEntrainementLabel Label = new() { Name = "Test", PourcentageDeLaFrequenceCardiaqueMax = 85, PourcentageDeLaPuissance = 90, PourcentageDeLaVMA = 80 };
 
-        public static readonly AthleteStatistiques AthleteStatistiques = new() { PuissanceCritique = 300, FrequenceCardiaqueMax = 190, VMA = 15 };
+        public static readonly AthleteStatistiques AthleteStatistiques = new() { PuissanceCritique = 300, FrequenceCardiaqueMax = 190, VMA = 15, FrequenceCardiaqueMin = 40 };
 
         public static readonly NiveauEntrainement NiveauEntrainement = new(Label, AthleteStatistiques);
     }
