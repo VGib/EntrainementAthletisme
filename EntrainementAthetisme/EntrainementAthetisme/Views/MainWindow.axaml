@@ -12,12 +12,9 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <DataGrid Items="{Binding NiveauxDEntrainements}" AutoGenerateColumns="False" >
+    <DataGrid Items="{Binding NiveauxDEntrainements}" AutoGenerateColumns="true" >
       <DataGrid.Columns>
         <DataGridTextColumn Header="Nom" Binding="{Binding Label.Name}" ></DataGridTextColumn>
-        <DataGridTextColumn Header="Fréquence Cardiaque" Binding="{Binding FrequenceCardiaque}"></DataGridTextColumn>
-        <DataGridTextColumn Header="Vitesse" Binding="{Binding VitesseEnMinParKm}" ></DataGridTextColumn>
-        <DataGridTextColumn Header="Puissance" Binding="{Binding Puissance}" ></DataGridTextColumn>
       </DataGrid.Columns>
 
     </DataGrid>
