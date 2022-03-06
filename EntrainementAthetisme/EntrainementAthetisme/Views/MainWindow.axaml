@@ -12,10 +12,20 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
+  <StackPanel Orientation="Vertical">
+  <Label Content="Entrainement" />
     <DataGrid Items="{Binding NiveauxDEntrainements}" AutoGenerateColumns="true" >
       <DataGrid.Columns>
         <DataGridTextColumn Header="Nom" Binding="{Binding Label.Name}" ></DataGridTextColumn>
       </DataGrid.Columns>
 
     </DataGrid>
+    <Label Content="Competition" />
+    <DataGrid Items="{Binding NiveauxCompetition}" AutoGenerateColumns="true" >
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="Nom" Binding="{Binding Label.Name}" ></DataGridTextColumn>
+      </DataGrid.Columns>
+
+    </DataGrid>
+  </StackPanel>
 </Window>
