@@ -13,6 +13,7 @@
     </Design.DataContext>
 
   <StackPanel Orientation="Vertical">
+   <TextBox  IsReadOnly="true" Text="{Binding EditMessage}"/>
   <Label Content="Entrainement" />
     <DataGrid Items="{Binding NiveauxDEntrainements}" AutoGenerateColumns="true" >
       <DataGrid.Columns>
