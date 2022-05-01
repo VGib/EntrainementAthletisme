@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EntrainementAthetisme\EntrainementAthetisme.csproj" />
+    <ProjectReference Include="..\EntrainementAthetisme\EntrainementAthletisme.csproj" />
     <ProjectReference Include="..\EntrainementAthletisme.Model\EntrainementAthletisme.Model.csproj" />
   </ItemGroup>
 
