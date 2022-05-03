@@ -27,5 +27,6 @@ package() {
     mkdir -p ${pkgdir}/opt/
     cp -R ${srcdir}/bin ${pkgdir}/opt/EntrainementAthletisme 
     mkdir -p ${pkgdir}/usr/bin
-    ln -s ${pkgdir}/opt/EntrainementAthletisme/EntrainementAthletisme ${pkgdir}/usr/bin/EntrainementAthletisme
+    cd ${pkgdir}/usr/bin
+    ln -s ../../opt/EntrainementAthletisme/EntrainementAthletisme EntrainementAthletisme
         }
