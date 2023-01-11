@@ -1,7 +1,7 @@
  #!/bin/bash
 # Author: Vincent Gibault
 pkgname=entrainementAthletisme
-pkgver=r10.397e3fc
+pkgver=1.2
 pkgrel=1
 pkgdesc="application pour l'athletisme (entrainement Vincent Gibault)"
 arch=('x86_64')
